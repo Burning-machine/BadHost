@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">BadHost</string>
+    <string name="image_uri">image.png</string>
+    <string name="intro_message"><![CDATA[Warning : this dns server does not block sony servers,i am not responsible if you get banned or your ps4 installs an update.\n\nBest use case for this app is hosting the exploit offline/locally using android hotspot.\n\nRequirements : this app requires root to bypass android\'s <1024 port restrictions mainly port 80 and 53.\nAndroid 8.0 Oreo and above.\n\nHow to : \n\n1) Turn on Hotspot.\n2) Make sure your Mobile data is off.\n3) Press start server.\n4) Connect Ps4 to Hotspot using manual DNS and enter the DNS ip shown on the app.\n5) You can access the exploit using the guide menu or shortcuts like http://ab.c or http://the.gate or by entering the IP address in the browser.\n\nNote : if you want to run it on wifi make sure that wifi does not have network access.\n]]></string>
+    <string name="description">Self-Host PS4 Exploit</string>
+</resources>
