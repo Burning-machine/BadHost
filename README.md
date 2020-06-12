@@ -6,7 +6,7 @@ A self-host android app that includes HTTP,DNS servers.
 <br/>
 <br/>
 ##### Note : if you want to run it on wifi make sure that wifi does not access to the internet
-<br/>
+
 ![Screenshot](Screen.jpg)
 <br/>
 <br/>
