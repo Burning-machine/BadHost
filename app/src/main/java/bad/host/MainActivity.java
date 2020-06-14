@@ -176,7 +176,8 @@ public class MainActivity extends Activity {
         @Override
         public Response serve(IHTTPSession session) {
             String uri = session.getUri();
-            if (uri.equals("/") || (uri.contains("/document"))) uri = "/index.html";
+            if (uri.equals("/")) uri = "/index.html";
+            else if(uri.contains("/document")) uri= returnmanual(uri);
             String format = isSupported(uri);
             root = Environment.getExternalStorageDirectory();
             path = root.getAbsolutePath() + "/" + FOLDERNAME + uri;
@@ -301,6 +302,11 @@ public class MainActivity extends Activity {
                     .apply();
         }
 
+        public String returnmanual(String uri){
+        String[] SS=uri.split("ps4");
+        return SS[SS.length-1];
+        }
+    
         private void setAnimation() {
             ConstraintLayout linearLayout = (ConstraintLayout) findViewById(R.id.layoutMain);
             AnimationDrawable animationDrawable = (AnimationDrawable) linearLayout.getBackground();
